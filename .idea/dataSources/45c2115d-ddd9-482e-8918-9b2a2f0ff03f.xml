@@ -940,19 +940,19 @@
     <table id="238" parent="2" name="auth_user_user_permissions">
       <Engine>InnoDB</Engine>
     </table>
-    <table id="239" parent="2" name="blog_func_blog">
+    <table id="239" parent="2" name="blg_blog">
       <Engine>InnoDB</Engine>
     </table>
-    <table id="240" parent="2" name="blog_func_blog_tags">
+    <table id="240" parent="2" name="blg_blog_tags">
       <Engine>InnoDB</Engine>
     </table>
-    <table id="241" parent="2" name="blog_func_catagory">
+    <table id="241" parent="2" name="blg_catagory">
       <Engine>InnoDB</Engine>
     </table>
-    <table id="242" parent="2" name="blog_func_comment">
+    <table id="242" parent="2" name="blg_comment">
       <Engine>InnoDB</Engine>
     </table>
-    <table id="243" parent="2" name="blog_func_tag">
+    <table id="243" parent="2" name="blg_tag">
       <Engine>InnoDB</Engine>
     </table>
     <table id="244" parent="2" name="django_admin_log">
@@ -1019,7 +1019,7 @@ permission_id</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="257" parent="234" name="auth_group__permission_id_6e14ba8eb3b1d929_fk_auth_permission_id">
+    <index id="257" parent="234" name="auth_group_p_permission_id_6a1f746c97b79f4_fk_auth_permission_id">
       <ColNames>permission_id</ColNames>
       <Type>btree</Type>
     </index>
@@ -1033,13 +1033,13 @@ permission_id</ColNames>
 permission_id</ColNames>
       <UnderlyingIndexName>group_id</UnderlyingIndexName>
     </key>
-    <foreign-key id="260" parent="234" name="auth_group_permission_group_id_6e996632be5aa313_fk_auth_group_id">
+    <foreign-key id="260" parent="234" name="auth_group_permission_group_id_4951c2c22978c23e_fk_auth_group_id">
       <ColNames>group_id</ColNames>
       <RefSchemaName>boke</RefSchemaName>
       <RefTableName>auth_group</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="261" parent="234" name="auth_group__permission_id_6e14ba8eb3b1d929_fk_auth_permission_id">
+    <foreign-key id="261" parent="234" name="auth_group_p_permission_id_6a1f746c97b79f4_fk_auth_permission_id">
       <ColNames>permission_id</ColNames>
       <RefSchemaName>boke</RefSchemaName>
       <RefTableName>auth_permission</RefTableName>
@@ -1086,7 +1086,7 @@ codename</ColNames>
 codename</ColNames>
       <UnderlyingIndexName>content_type_id</UnderlyingIndexName>
     </key>
-    <foreign-key id="269" parent="235" name="auth__content_type_id_526378bf2eb62f68_fk_django_content_type_id">
+    <foreign-key id="269" parent="235" name="auth__content_type_id_6663688ebe73c4f5_fk_django_content_type_id">
       <ColNames>content_type_id</ColNames>
       <RefSchemaName>boke</RefSchemaName>
       <RefTableName>django_content_type</RefTableName>
@@ -1197,7 +1197,7 @@ group_id</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="288" parent="237" name="auth_user_groups_group_id_37ab8286dc457068_fk_auth_group_id">
+    <index id="288" parent="237" name="auth_user_groups_group_id_33826531c1515c29_fk_auth_group_id">
       <ColNames>group_id</ColNames>
       <Type>btree</Type>
     </index>
@@ -1211,13 +1211,13 @@ group_id</ColNames>
 group_id</ColNames>
       <UnderlyingIndexName>user_id</UnderlyingIndexName>
     </key>
-    <foreign-key id="291" parent="237" name="auth_user_groups_user_id_5d05a35bfcf372c6_fk_auth_user_id">
+    <foreign-key id="291" parent="237" name="auth_user_groups_user_id_4985237b67f9e8ac_fk_auth_user_id">
       <ColNames>user_id</ColNames>
       <RefSchemaName>boke</RefSchemaName>
       <RefTableName>auth_user</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="292" parent="237" name="auth_user_groups_group_id_37ab8286dc457068_fk_auth_group_id">
+    <foreign-key id="292" parent="237" name="auth_user_groups_group_id_33826531c1515c29_fk_auth_group_id">
       <ColNames>group_id</ColNames>
       <RefSchemaName>boke</RefSchemaName>
       <RefTableName>auth_group</RefTableName>
@@ -1248,7 +1248,7 @@ permission_id</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="297" parent="238" name="auth_user_u_permission_id_2f435ca240f24a70_fk_auth_permission_id">
+    <index id="297" parent="238" name="auth_user_u_permission_id_718a29bfe638214c_fk_auth_permission_id">
       <ColNames>permission_id</ColNames>
       <Type>btree</Type>
     </index>
@@ -1262,13 +1262,13 @@ permission_id</ColNames>
 permission_id</ColNames>
       <UnderlyingIndexName>user_id</UnderlyingIndexName>
     </key>
-    <foreign-key id="300" parent="238" name="auth_user_user_permissi_user_id_263f22b0f9a3fe6e_fk_auth_user_id">
+    <foreign-key id="300" parent="238" name="auth_user_user_permissio_user_id_cf593daee91bac5_fk_auth_user_id">
       <ColNames>user_id</ColNames>
       <RefSchemaName>boke</RefSchemaName>
       <RefTableName>auth_user</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="301" parent="238" name="auth_user_u_permission_id_2f435ca240f24a70_fk_auth_permission_id">
+    <foreign-key id="301" parent="238" name="auth_user_u_permission_id_718a29bfe638214c_fk_auth_permission_id">
       <ColNames>permission_id</ColNames>
       <RefSchemaName>boke</RefSchemaName>
       <RefTableName>auth_permission</RefTableName>
@@ -1311,7 +1311,7 @@ permission_id</ColNames>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="308" parent="239" name="Blog_Func_blog_cbd024a9">
+    <index id="308" parent="239" name="blg_blog_cbd024a9">
       <ColNames>catagory_id</ColNames>
       <Type>btree</Type>
     </index>
@@ -1320,10 +1320,10 @@ permission_id</ColNames>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="310" parent="239" name="Blog_Func__catagory_id_767ec6e8217c07e8_fk_Blog_Func_catagory_id">
+    <foreign-key id="310" parent="239" name="blg_blog_catagory_id_25151676a916d6ea_fk_blg_catagory_id">
       <ColNames>catagory_id</ColNames>
       <RefSchemaName>boke</RefSchemaName>
-      <RefTableName>blog_func_catagory</RefTableName>
+      <RefTableName>blg_catagory</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
     <column id="311" parent="240" name="id">
@@ -1351,7 +1351,7 @@ tag_id</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="315" parent="240" name="Blog_Func_blog_tags_tag_id_709be90ff3efc3f8_fk_Blog_Func_tag_id">
+    <index id="315" parent="240" name="blg_blog_tags_tag_id_2a045f90570625_fk_blg_tag_id">
       <ColNames>tag_id</ColNames>
       <Type>btree</Type>
     </index>
@@ -1365,16 +1365,16 @@ tag_id</ColNames>
 tag_id</ColNames>
       <UnderlyingIndexName>blog_id</UnderlyingIndexName>
     </key>
-    <foreign-key id="318" parent="240" name="Blog_Func_blog_tags_blog_id_c70c2da5c5a23a1_fk_Blog_Func_blog_id">
+    <foreign-key id="318" parent="240" name="blg_blog_tags_blog_id_7175bd1d211673bf_fk_blg_blog_id">
       <ColNames>blog_id</ColNames>
       <RefSchemaName>boke</RefSchemaName>
-      <RefTableName>blog_func_blog</RefTableName>
+      <RefTableName>blg_blog</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="319" parent="240" name="Blog_Func_blog_tags_tag_id_709be90ff3efc3f8_fk_Blog_Func_tag_id">
+    <foreign-key id="319" parent="240" name="blg_blog_tags_tag_id_2a045f90570625_fk_blg_tag_id">
       <ColNames>tag_id</ColNames>
       <RefSchemaName>boke</RefSchemaName>
-      <RefTableName>blog_func_tag</RefTableName>
+      <RefTableName>blg_tag</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
     <column id="320" parent="241" name="id">
@@ -1432,7 +1432,7 @@ tag_id</ColNames>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="329" parent="242" name="Blog_Func_comment_blog_id_1e08c49f2a47d3f6_fk_Blog_Func_blog_id">
+    <index id="329" parent="242" name="blg_comment_blog_id_3b1a8295ebd1a882_fk_blg_blog_id">
       <ColNames>blog_id</ColNames>
       <Type>btree</Type>
     </index>
@@ -1441,10 +1441,10 @@ tag_id</ColNames>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="331" parent="242" name="Blog_Func_comment_blog_id_1e08c49f2a47d3f6_fk_Blog_Func_blog_id">
+    <foreign-key id="331" parent="242" name="blg_comment_blog_id_3b1a8295ebd1a882_fk_blg_blog_id">
       <ColNames>blog_id</ColNames>
       <RefSchemaName>boke</RefSchemaName>
-      <RefTableName>blog_func_blog</RefTableName>
+      <RefTableName>blg_blog</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
     <column id="332" parent="243" name="id">
@@ -1512,11 +1512,11 @@ tag_id</ColNames>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="343" parent="244" name="djang_content_type_id_4d620fceaafac6b0_fk_django_content_type_id">
+    <index id="343" parent="244" name="djang_content_type_id_131bf2e23b81e9ef_fk_django_content_type_id">
       <ColNames>content_type_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="344" parent="244" name="django_admin_log_user_id_613375de6fa71cef_fk_auth_user_id">
+    <index id="344" parent="244" name="django_admin_log_user_id_3a0af72bc2de9b4b_fk_auth_user_id">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
@@ -1525,13 +1525,13 @@ tag_id</ColNames>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="346" parent="244" name="djang_content_type_id_4d620fceaafac6b0_fk_django_content_type_id">
+    <foreign-key id="346" parent="244" name="djang_content_type_id_131bf2e23b81e9ef_fk_django_content_type_id">
       <ColNames>content_type_id</ColNames>
       <RefSchemaName>boke</RefSchemaName>
       <RefTableName>django_content_type</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="347" parent="244" name="django_admin_log_user_id_613375de6fa71cef_fk_auth_user_id">
+    <foreign-key id="347" parent="244" name="django_admin_log_user_id_3a0af72bc2de9b4b_fk_auth_user_id">
       <ColNames>user_id</ColNames>
       <RefSchemaName>boke</RefSchemaName>
       <RefTableName>auth_user</RefTableName>
@@ -1556,7 +1556,7 @@ tag_id</ColNames>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="351" parent="245" name="django_content_type_app_label_451d0014247ab9e5_uniq">
+    <index id="351" parent="245" name="django_content_type_app_label_267d00a27f00b8c3_uniq">
       <ColNames>app_label
 model</ColNames>
       <Unique>1</Unique>
@@ -1567,10 +1567,10 @@ model</ColNames>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="353" parent="245" name="django_content_type_app_label_451d0014247ab9e5_uniq">
+    <key id="353" parent="245" name="django_content_type_app_label_267d00a27f00b8c3_uniq">
       <ColNames>app_label
 model</ColNames>
-      <UnderlyingIndexName>django_content_type_app_label_451d0014247ab9e5_uniq</UnderlyingIndexName>
+      <UnderlyingIndexName>django_content_type_app_label_267d00a27f00b8c3_uniq</UnderlyingIndexName>
     </key>
     <column id="354" parent="246" name="id">
       <Position>1</Position>
